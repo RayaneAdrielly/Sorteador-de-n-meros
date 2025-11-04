@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorteador de Números</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Sorteador de Números</h1>
+
+    <section class="descricao">
+      <p>Informe a quantidade de números, o intervalo mínimo e máximo. Você pode escolher se deseja ou não repetir os números sorteados.</p>
+    </section>
+
+    <section class="formulario">
+      <label>Quantidade de números:
+        <input type="number" id="quantidade" min="1" />
+      </label>
+
+      <label>Valor mínimo:
+        <input type="number" id="minimo" />
+      </label>
+
+      <label>Valor máximo:
+        <input type="number" id="maximo" />
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" id="semRepeticao" />
+        Não repetir números
+      </label>
+
+      <button id="sortear">Sortear</button>
+      <p id="mensagem" class="mensagem"></p>
+    </section>
+
+    <section id="resultado" class="resultado"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
